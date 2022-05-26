@@ -1,16 +1,24 @@
 import React from 'react'
-import Converter from './components/converter'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Converter from './components/converter'
+import Main from './pages/main'
+import Rates from './pages/rates';
 import './styles/index.css'
+import './styles/App.css'
 
 function App() {
 
   return (
-    <div>
-      <div className="max-w-4xl m-auto pb-6 p">
-        <Converter />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/:rates" element={<Rates />} />
+      </Routes>
+    </Router>
   )
 }
 
 export default App
+
+
+

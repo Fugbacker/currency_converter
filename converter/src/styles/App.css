@@ -1,0 +1,79 @@
+/* body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+} */
+
+h1 {
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+
+select {
+  margin-left: .5rem;
+}
+
+.equals {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.rateList {
+  margin-top: 30px;
+}
+
+.rateName, .rateValue{
+  font-weight: 700;
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+
+.rate:nth-child(2n+1) {
+  background-color: #f2f4f6;
+}
+
+.changeRateButton {
+  border: 2px solid #D1D5DB;
+  border-radius: 50%;
+  padding:5px;
+  cursor: pointer;
+
+}
+
+.changeRateButton:hover {
+  border-color: orange;
+}
+
+.imageButton{
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/arrows.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
